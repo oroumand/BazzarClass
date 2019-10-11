@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01. Core\Bazzar.Core.ApplicationServices\Bazzar.Core.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\02. Infrastructures\Data\Bazzar.Infrastructures.Data.Fake\Bazzar.Infrastructures.Data.Fake.csproj" />
+    <ProjectReference Include="..\..\02. Infrastructures\Data\Bazzar.Infrastructures.Data.SqlServer\Bazzar.Infrastructures.Data.SqlServer.csproj" />
+  </ItemGroup>
+
+</Project>
