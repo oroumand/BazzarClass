@@ -23,7 +23,10 @@ namespace Bazzar.Core.Domain.Advertisements.Entities
         public AdvertismentState State { get; protected set; }
         public List<Picture> Pictures { get; private set; }
         #endregion
+        private Advertisment()
+        {
 
+        }
         public Advertisment(Guid id, UserId ownerId)
         {
             Pictures = new List<Picture>();

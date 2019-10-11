@@ -18,7 +18,7 @@ namespace Framework.Domain.Entieis
             _events.Add(@event);
         }
         protected abstract void SetStateByEvent(IEvent @event);
-        public IEnumerable<object> GetEvents() => _events.AsEnumerable();
+        public IEnumerable<IEvent> GetEvents() => _events.AsEnumerable();
         public void ClearEvents() => _events.Clear();
         protected abstract void ValidateInvariants();
 

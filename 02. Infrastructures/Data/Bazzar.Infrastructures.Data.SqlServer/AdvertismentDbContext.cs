@@ -1,5 +1,5 @@
 ﻿using Bazzar.Core.Domain.Advertisements.Entities;
-using Framework.Domain.Data;
+using Bazzar.Core.Domain.UserProfiles.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -23,20 +23,7 @@ namespace Bazzar.Infrastructures.Data.SqlServer
         }
 
         public DbSet<Advertisment> Advertisments { get; set; }
+        public DbSet<UserProfile> UserProfiles { get; set; }
 
-    }
-
-    public class AdvertismentUnitOfWork : IUnitOfWork
-    {
-        private readonly AdvertismentDbContext advertismentDbContext;
-
-        public AdvertismentUnitOfWork(AdvertismentDbContext advertismentDbContext)
-        {
-            this.advertismentDbContext = advertismentDbContext;
-        }
-        public int Commit()
-        {
-            return advertismentDbContext.SaveChanges();
-        }
     }
 }
