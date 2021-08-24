@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Framework.Domain.Entieis
+namespace Framework.Domain.Entities
 {
     //public abstract class BaseEntity<TId>
     //{

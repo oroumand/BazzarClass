@@ -1,6 +1,6 @@
 ﻿using Bazzar.Core.Domain.Advertisements.Events;
 using Bazzar.Core.Domain.Advertisements.ValueObjects;
-using Framework.Domain.Entieis;
+using Framework.Domain.Entities;
 using Framework.Domain.Events;
 using Framework.Domain.Exceptions;
 using Framework.Tools.Enums;

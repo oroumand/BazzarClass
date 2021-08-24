@@ -1,4 +1,4 @@
-﻿using Framework.Domain.Entieis;
+﻿using Framework.Domain.Entities;
 using System.Threading.Tasks;
 
 namespace Framework.Domain.Data
