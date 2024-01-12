@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Framework.Domain.Entieis
+namespace Framework.Domain.Entities
 {
     public abstract class BaseAggregateRoot<TId> where TId : IEquatable<TId>
     {

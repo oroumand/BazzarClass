@@ -1,7 +1,7 @@
 ﻿using Bazzar.Core.Domain.Shared.ValueObjects;
 using Bazzar.Core.Domain.UserProfiles.Events;
 using Bazzar.Core.Domain.UserProfiles.ValueObjects;
-using Framework.Domain.Entieis;
+using Framework.Domain.Entities;
 using Framework.Domain.Events;
 using System;
 
